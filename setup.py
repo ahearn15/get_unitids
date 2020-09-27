@@ -1,34 +1,35 @@
-from setuptools import setup
+import pathlib
+from setuptools import setup, find_packages
 
-setup(
-  name = 'get_unitids',         # How you named your package folder (MyLib)
-  packages = ['get_unitids'],   # Chose the same as "name"
-  version = '0.1',      # Start with a small number and increase it with every change you make
-  license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
-  description = 'IPEDS',   # Give a short description about your library
-  author = 'Adam Hearn',                   # Type in your name
-  author_email = 'adam.hearn@collegetransitions.com',      # Type in your E-Mail
-  url = 'https://github.com/user/reponame',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/ahearn15/get_unitids/archive/v_01.tar.gz',    # I explain this later on
-  keywords = ['SOME', 'MEANINGFULL', 'KEYWORDS'],   # Keywords that define your package best
-  install_requires=[            # I get to this in a second
-          're',
-          'math',
-          'numpy',
-          'itertools',
-          'collections',
-          'nltk',
-          'textblob',
-          'pandas',
-      ],
-  classifiers=[
-    'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
-    'Intended Audience :: Developers',      # Define that your audience are developers
-    'Topic :: Software Development :: Build Tools',
-    'License :: OSI Approved :: MIT License',   # Again, pick a license
-    'Programming Language :: Python :: 3',      #Specify which pyhton versions that you want to support
-    'Programming Language :: Python :: 3.4',
-    'Programming Language :: Python :: 3.5',
-    'Programming Language :: Python :: 3.6',
-  ],
-)
+HERE = pathlib.Path(__file__).parent
+
+VERSION = '0.0.6'
+PACKAGE_NAME = 'unitids'
+AUTHOR = 'Adam Hearn'
+AUTHOR_EMAIL = 'adam.hearn@collegetransitions.com'
+URL = 'https://github.com/ahearn15/get_unitids'
+
+LICENSE = 'MIT License'
+DESCRIPTION = 'Python module to imputate IPEDS unitids from non-matching institution names'
+LONG_DESCRIPTION = (HERE / "README.md").read_text()
+LONG_DESC_TYPE = "text/markdown"
+
+INSTALL_REQUIRES = [
+      'numpy',
+      'pandas',
+      'nltk',
+      'textblob',
+]
+
+setup(name=PACKAGE_NAME,
+      version=VERSION,
+      description=DESCRIPTION,
+      long_description=LONG_DESCRIPTION,
+      long_description_content_type=LONG_DESC_TYPE,
+      author=AUTHOR,
+      license=LICENSE,
+      author_email=AUTHOR_EMAIL,
+      url=URL,
+      install_requires=INSTALL_REQUIRES,
+      packages=find_packages()
+      )
