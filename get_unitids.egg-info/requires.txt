@@ -1,0 +1,8 @@
+re
+math
+numpy
+itertools
+collections
+nltk
+textblob
+pandas
