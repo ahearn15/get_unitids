@@ -253,7 +253,7 @@ If we merge our Forbes data with this 2018 list of IPEDS institutions, we get a 
 
 ```python
 # Installing the module
-!pip install unitids==0.0.92
+!pip install unitids
 
 # Import required functions
 import numpy as np
