@@ -42,14 +42,6 @@ forbes.head(5)
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -116,17 +108,6 @@ ipeds.head(5)
 
 <div>
 <style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -187,17 +168,6 @@ merged.head(5)
 
 <div>
 <style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -330,13 +300,6 @@ forbes_unitids.head(5)
         vertical-align: middle;
     }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -431,13 +394,6 @@ nonmatches
         vertical-align: middle;
     }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -929,14 +885,6 @@ dta.head(5)
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -1032,7 +980,7 @@ sns.scatterplot(x=np.log(dta["endowment"]), y=dta["Financial GPA"])
 
 
 
-![png](output_31_1.png)
+![png](scatter_example.png)
 
 
 Seems like endowment plays a pretty significant role in Forbes' grading of Financial GPA!
@@ -1060,14 +1008,6 @@ nonmatches
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
