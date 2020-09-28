@@ -2,7 +2,7 @@
 
 ## A Python Module to Imputate IPEDS UnitID Numbers from Non-Matching Institution Names
 
-Have you ever worked with institutional data from multiple sources? If so, one of them is likmayely IPEDS which of course involves the infamous `unitid` variable. The secondary source, on the other hand, may only have the institution's name and no `unitid`. In this case, to join the datasets, you would need to merge on institution name and fill in the rest of the unitids manually to retrieve the IPEDS data.  
+Have you ever worked with institutional data from multiple sources? If so, one of them is likely IPEDS which of course involves the infamous `unitid` variable. The secondary source, on the other hand, may only have the institution's name and no `unitid`. In this case, to join the datasets, you would need to merge on institution name and fill in the rest of the unitids manually to retrieve the IPEDS data.  
 
 Anyone who has worked with IPEDS data would know that not all institution names perfectly line up across multiple sources. For example, Tulane University is named as Tulane University of Louisiana in the IPEDS universe. In this case of conflicting names, there would be an imperfect merge requiring you to manually enter Tulane's unitid number.
 
