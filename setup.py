@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 HERE = pathlib.Path(__file__).parent
 
-VERSION = '0.0.6'
+VERSION = '0.0.95'
 PACKAGE_NAME = 'unitids'
 AUTHOR = 'Adam Hearn'
 AUTHOR_EMAIL = 'adam.hearn@collegetransitions.com'

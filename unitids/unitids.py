@@ -20,7 +20,8 @@ splitter_naive = lambda x: re_sent_ends_naive.split(re_stripper_naive.sub(' ', x
 
 def get_tuples_nosentences(txt):
     """Get tuples that ignores all punctuation (including sentences)."""
-    if not txt: return None
+    if not txt: 
+        return None
     ng = ngrams(re_stripper_alpha.sub(' ', txt).split(), NGRAM)
     return list(ng)
 
@@ -124,9 +125,10 @@ def get_unitids(dataframe, stateFlag):
     no_match_list = no_match[var_name]
     if stateFlag == True:
         no_match_state = no_match[state]
+    else:
+        no_match_state = " "
         
     no_match_list = no_match_list + " " + no_match_state
-
     master2 = pd.DataFrame.from_dict(dictionary_state).reset_index()
     master2.columns = ('institution_ipeds', 'unitid')
     master2 = master2[['unitid', 'institution_ipeds']]
